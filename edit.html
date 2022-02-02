@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Chamado</title>
+    <link rel="sortcut icon" href="./image/edit.png">
+    <link rel="stylesheet" href="./style/formulario.css">
+    
+</head>
+<body>
+
+    <form action="./chamados-teste.html" class="formulario" method="GET">
+
+        <input type="hidden" name="id" value="">
+        <!--A data será enviada automaticamente com base na hora atual da máquina-->
+
+        <h2>Editar Chamado de ID: X</h2>
+
+        <div class="campo_dados">
+            <tr>
+                <td>
+                    <label for="inputName">Solicitado por:</label>
+                    <input name="solicitante" id="solicitante" type="text" placeholder="Digite um Nome" value="">
+                </td>
+                <td>
+                    <label for="inputName">Atendido por:</label>
+                    <input name="atendente" id="atendente" type="text" placeholder="Digite um Nome" value="">
+                </td>
+            </tr>
+        </div>
+
+        <div id="form-edit">
+
+            <textarea name="solucao" placeholder="Defina a solução" style="resize: none; text-align: center; margin-bottom: 0.5rem;" cols="40" rows="5"></textarea><br>
+    
+            <div style="margin-bottom: 0.5rem;">
+                <select name="situacao" id="selecao">
+                    <option value=""></option>
+                    <option value="Não iniciado">Não iniciado</option>
+                    <option value="Iniciado">Iniciado</option>
+                    <option value="Em andamento">Em andamento</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Salvar" style="background-color: green; color: white; cursor: pointer;">
+        </div>
+    </form>
+</body>
+</html>

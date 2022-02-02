@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Chamado</title>
+    <link rel="sortcut icon" href="./image/Logo TVin.PNG">
+    <link rel="stylesheet" href="./style/formulario.css">
+
+</head>
+<body>
+
+    <form action="chamados-teste.html" method="GET" name="formulario" class="formulario">
+
+        <h2 style="text-align: center;">Novo Chamado</h2>
+
+        <div class="campo_dados">
+            <tr>
+                <td>
+                    <label for="inputName">Solicitado por:</label>
+                    <input name="solicitante" id="solicitante" type="text" placeholder="Digite um Nome">
+                </td>
+                <td>
+                    <label for="inputName">Atendido por:</label>
+                    <input name="atendente" id="atendente" type="text" placeholder="Digite um Nome">
+                </td>
+            </tr>
+        </div>
+
+        <div class="descritivo">
+            <label for="">Descritivo do Problema:</label>
+            <textarea name="problema" placeholder="Descreva o problema" style="resize: none;" cols="40" rows="5"></textarea>
+        </div>
+
+        <div style="text-align: center;">
+            <select name="situacao" id="selecao">
+                <option value="Não iniciado">Não iniciado</option>
+                <option value="Iniciado">Iniciado</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Finalizado">Finalizado</option>
+            </select>
+        </div>
+
+        <div class="campo_dados" style="text-align: center;">
+            <input type="submit" value="Confirmar" id="" style="background-color: greenyellow; cursor: pointer;" >
+        </div>
+
+    </form>
+
+</body>
+</html>

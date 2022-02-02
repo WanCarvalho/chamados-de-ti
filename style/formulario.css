@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo_dados{
+    justify-content: center;
+    padding: 1rem;
+}
+
+.formulario{
+    text-align: center;
+}
