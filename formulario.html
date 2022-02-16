@@ -11,30 +11,43 @@
 </head>
 <body>
 
-    <form action="chamados-teste.html" method="GET" name="formulario" class="formulario">
+    <form action="./chamados-teste.html" method="GET" name="formulario" class="formulario">
 
-        <h2 style="text-align: center;">Novo Chamado</h2>
+        <h2>Novo Chamado</h2>
 
         <div class="campo_dados">
-            <tr>
-                <td>
+                <tr>
                     <label for="inputName">Solicitado por:</label>
                     <input name="solicitante" id="solicitante" type="text" placeholder="Digite um Nome">
-                </td>
-                <td>
+                </tr>
+                <br>
+                <br>
+                <tr>
                     <label for="inputName">Atendido por:</label>
                     <input name="atendente" id="atendente" type="text" placeholder="Digite um Nome">
-                </td>
-            </tr>
+                </tr>
         </div>
 
         <div class="descritivo">
             <label for="">Descritivo do Problema:</label>
-            <textarea name="problema" placeholder="Descreva o problema" style="resize: none;" cols="40" rows="5"></textarea>
+            <textarea name="problema" placeholder="Descreva o problema aqui" cols="50" rows="5"></textarea>
         </div>
 
-        <div style="text-align: center;">
+        <!--Criado para adicionar data e hora manualmente. Implementado para pegar
+        automaticamente em conexao.php-->
+        <!--<div class="campo_dados">
+            <tr>
+                <td>
+                    <label for="">Início:</label>
+                    <input name="data" type="date" required>
+                    <input name="hora" type="time" required>
+                </td>
+            </tr> 
+        </div>-->
+
+        <div>
             <select name="situacao" id="selecao">
+                <option value="">Selecione a situação</option>
                 <option value="Não iniciado">Não iniciado</option>
                 <option value="Iniciado">Iniciado</option>
                 <option value="Em andamento">Em andamento</option>
@@ -42,11 +55,10 @@
             </select>
         </div>
 
-        <div class="campo_dados" style="text-align: center;">
-            <input type="submit" value="Confirmar" id="" style="background-color: greenyellow; cursor: pointer;" >
+        <div class="campo_dados">
+            <input type="submit" value="Salvar" class="btn">
         </div>
 
     </form>
-
 </body>
 </html>

@@ -20,24 +20,26 @@
 
         <div class="campo_dados">
             <tr>
-                <td>
+                <tr>
                     <label for="inputName">Solicitado por:</label>
                     <input name="solicitante" id="solicitante" type="text" placeholder="Digite um Nome" value="">
-                </td>
-                <td>
+                </tr>
+                <br>
+                <br>
+                <tr>
                     <label for="inputName">Atendido por:</label>
                     <input name="atendente" id="atendente" type="text" placeholder="Digite um Nome" value="">
-                </td>
+                </tr>
             </tr>
         </div>
 
-        <div id="form-edit">
+        <div>
 
-            <textarea name="solucao" placeholder="Defina a solução" style="resize: none; text-align: center; margin-bottom: 0.5rem;" cols="40" rows="5"></textarea><br>
+            <textarea name="solucao" placeholder="Descreva o problema aqui" cols="40" rows="5"></textarea><br>
     
-            <div style="margin-bottom: 0.5rem;">
+            <div>
                 <select name="situacao" id="selecao">
-                    <option value=""></option>
+                    <option value="">Selecione a situação</option>
                     <option value="Não iniciado">Não iniciado</option>
                     <option value="Iniciado">Iniciado</option>
                     <option value="Em andamento">Em andamento</option>
@@ -45,7 +47,9 @@
                 </select>
             </div>
 
-            <input type="submit" value="Salvar" style="background-color: green; color: white; cursor: pointer;">
+            <div class="campo_dados">
+                <input type="submit" value="Salvar" class="btn">
+            </div>
         </div>
     </form>
 </body>
